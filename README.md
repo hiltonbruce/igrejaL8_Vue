@@ -1,3 +1,23 @@
+# [ELIÚ] - Porque Ele é meu Deus
+
+## Organização de Igrejas
+
+- Aplicação personalizada, moderna, isenta de pretensões financeiras, e pensado em facilitar e automatizar os trabalhos corriqueiros da secretária executiva, tesouraria da igreja e auxiliar nas tomadas de decisões da Direção.
+
+- Esperamos que os usuários deste sistema possa enviar sua opinião e sugestões para que sejam analisadas e disponibilizadas nas novas versões.
+
+- O Senhor Jesus esteve presente durante todo desenvolvimento me dando o rumo em meio a tantos códigos. Espero no Deus de Abraão, Isaque e Jacó que o uso deste software ajude a abençoar sua igreja, facilitando trabalhos e lhe permitindo mais tempo e dedicação nas outras áreas da obra de Deus.
+
+# [Elihu] - Because He is my God
+## Church Organization
+
+ - Personalized, modern application, free of financial pretensions, and designed to facilitate and automate the everyday tasks of the executive secretary, church treasury and assist in decision-making by the Board.
+
+ - We hope that users of this system can send their opinion and suggestions so that they can be analyzed and made available in new versions.
+
+- The Lord Jesus was present throughout the development, giving me the way through so many codes. I hope in the God of Abraham, Isaac and Jacob that the use of this software will help to bless your church, facilitating work and allowing you more time and dedication in other areas of God's work.
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">
