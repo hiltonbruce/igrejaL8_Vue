@@ -1,5 +1,11 @@
 # [ELIÚ](https://github.com/hiltonbruce/igrejaL8_Vue) - Porque Ele é meu Deus
 
+<p align="center">
+<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
+<!-- <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a> -->
+<!-- <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a> -->
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+</p>
 ## Organização de Igrejas
 
 - Aplicação personalizada, moderna, isenta de pretensões financeiras, e pensado em facilitar e automatizar os trabalhos corriqueiros da secretária executiva, tesouraria da igreja e auxiliar nas tomadas de decisões da Direção.

@@ -16,6 +16,7 @@ class CreateMembersTable extends Migration
         Schema::create('members', function (Blueprint $table) {
             $table->id();
             $table->string('name');
+            $table->integer('marital_status')->nullable()->comment('Estado Civil - null/0-Solteiro, 1-Casado, 2-Divorciado - definir em função');
             $table->integer('city_birth')->nullable()->comment('Cidade natal');
             $table->boolean('sex')->nullable()->comment('0-Masculino, 1-Feminino');
             $table->integer('city')->comment('Cidade onde reside');
@@ -36,12 +37,17 @@ class CreateMembersTable extends Migration
             $table->date('water_baptism')->nullable()->comment('Data do batismo em águas');
             $table->integer('city_baptism')->nullable()->comment('ID da Cidade onde onde foi batizado em águas');
             $table->date('work_assistant')->comment('Data da Consagração a auxiliar de trabalho');
-            $table->date('deacon')->comment('Data da Consagração a diácono');
-            $table->date('elder')->comment('Data da Consagração a presbítero');
-            $table->date('evangelist')->comment('Data da Consagração a evangelista');
-            $table->date('shepherd')->comment('Data da Consagração a pastor');
+            $table->integer('user_id')->comment('Resposável pelo cadastro');
+            $table->integer('user_update')->nullable()->comment('Resposável pelo cadastro');
+            $table->integer('user_deleted')->nullable()->comment('Resposável pelo cadastro');
 
             $table->timestamps();
+            $table->softDeletes();
+
+            //chave
+            $table->foreign('user_id')->references('id')->on('users');//Ligação com tabela users
+            $table->foreign('user_updade')->references('id')->on('users');//Ligação com tabela users
+            $table->foreign('user_deleted')->references('id')->on('users');//Ligação com tabela users
         });
     }
 

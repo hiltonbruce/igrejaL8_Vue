@@ -4,29 +4,29 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateDistrictsTable extends Migration
+class CreateConsecrationsTable extends Migration
 {
     /**
      * Run the migrations.
-     * Bairros
+     * Consagrações
      * @return void
      */
     public function up()
     {
-        Schema::create('districts', function (Blueprint $table) {
+        Schema::create('consecrations', function (Blueprint $table) {
             $table->id();
-            $table->string('name', 150)->comment('Nome do Bairro');
-            $table->float('latitude', 2, 7)->comment('Linha central do Bairro')->nullable();
-            $table->float('longitude', 2, 7)->comment('Linha central do Bairro')->nullable();
-            $table->integer('city_id')->comment('Código UF do Estado - Chave de ligação');
+            $table->integer('type')->comment('Tipos Definido em função - Auxiliar, Diácono, Presbítero...');
+            $table->date('date')->comment('Data da Consgração');
+            $table->string('shepherd')->comment('Pastor responsável pela consagração');
+            $table->integer('member_id');
+            $table->integer('status')->nullable()->default(1)->comment('null/0 - cancelado, 1 - ativo, 2-Vencido ');
             $table->integer('user_id')->comment('Resposável pelo cadastro');
             $table->integer('user_update')->nullable()->comment('Resposável pelo cadastro');
-            $table->integer('user_deleted')->nullable()->comment('Resposável pelo cadastro');
+            $table->integer('user_deleted')->comment('Resposável pelo cadastro');
 
             $table->timestamps();
-            $table->softDeletes('deleted_at', 0);
+            $table->softDeletes();
             //chaves
-            $table->foreign('city_id')->references('id')->on('cities');
             $table->foreign('user_id')->references('id')->on('users');//Ligação com tabela users
             $table->foreign('user_updade')->references('id')->on('users');//Ligação com tabela users
             $table->foreign('user_deleted')->references('id')->on('users');//Ligação com tabela users
@@ -40,6 +40,6 @@ class CreateDistrictsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('districts');
+        Schema::dropIfExists('consecrations');
     }
 }
