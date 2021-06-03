@@ -1,4 +1,4 @@
-# [ELIÚ] - Porque Ele é meu Deus
+# [ELIÚ](https://github.com/hiltonbruce/igrejaL8_Vue) - Porque Ele é meu Deus
 
 ## Organização de Igrejas
 
@@ -8,7 +8,7 @@
 
 - O Senhor Jesus esteve presente durante todo desenvolvimento me dando o rumo em meio a tantos códigos. Espero no Deus de Abraão, Isaque e Jacó que o uso deste software ajude a abençoar sua igreja, facilitando trabalhos e lhe permitindo mais tempo e dedicação nas outras áreas da obra de Deus.
 
-# [Elihu] - Because He is my God
+# [Elihu](https://github.com/hiltonbruce/igrejaL8_Vue) - Because He is my God
 ## Church Organization
 
  - Personalized, modern application, free of financial pretensions, and designed to facilitate and automate the everyday tasks of the executive secretary, church treasury and assist in decision-making by the Board.
